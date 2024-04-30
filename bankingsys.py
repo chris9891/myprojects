@@ -8,7 +8,7 @@ class Bank:
         self.username = input("Enter username: ")
         self.password = input("Enter password: ")
         if not self.login():
-            return "Login failed. Cannot create account."
+            return "Login failed."
 
         if account_number in self.accounts:
             return "Account already exists"
